@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Animated login form UI html and css</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Didact+Gothic&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		function passvalue(){
+			var myname = document.getElementById("txt").value;
+			var myfood = document.getElementById("food").value;
+			localStorage.setItem("textvalue",myname);
+			localStorage.setItem("textfood",myfood);
+			return;
+		}
+	</script>
+</head>
+<body>
+	<section>
+		<h1>Wanna look at some cool stuff?</h1>
+		<div class="box">
+			<div class="form">
+				<h2>GO AHEAD AND FILL UP !</h2>
+				<form  action="first.html"> <!-- FORM tag with an ACTION ATTRIBUTE to link to an external page on clicking the SUBMIT type input-->
+
+					<!--This represents the USERNAME PLACEHOLDER-->
+					<div class="inputbox">
+						<input type="text" id="txt" name="name" placeholder="your name" required>
+						<img src="user.png">
+					</div>
+                    <!--This represents the PASSWORD PLACEHOLDER-->
+					<div class="inputbox">
+						<input type="text" id="food" placeholder="your favorite food" required>
+						<img src="food.png">
+					</div>
+ 
+                    <!--This represents the REMEMBER ME area-->
+                    <label class="remember"><input type="checkbox">Remember me</label>
+     
+                    <!--This reresents the SUBMIT BUTTON/ LOGIN BUTTON-->
+                    <div class="inputbox">
+                    	<input type="submit" value="*BOOM*" onclick="passvalue();">
+                    </div>
+         
+				</form>
+			</div>
+		</div>
+	</section>
+   
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="csss/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+	<title>Moving car</title>
+</head>
+<body>
+	<div class="bg">
+		<h2>
+			Hey <span id="result_name"></span> , wanna go on a ride!?<br>
+			Let's have some <span id="result_food"></span> !
+		</h2>
+		<img src="acar.png" alt="image" class="car">
+	</div>
+
+	<script type="text/javascript">
+		document.getElementById("result_name").innerHTML = localStorage.getItem("textvalue");
+		document.getElementById("result_food").innerHTML = localStorage.getItem("textfood");
+	</script>
+</body>
+</html>

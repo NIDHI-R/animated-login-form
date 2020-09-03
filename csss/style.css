@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.bg {
+	position: relative;
+	background: #00fdff url("../images/oldtown.jpg");
+	background-size: cover;
+        height: 100vh;
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        animation: animate 10s linear infinite;
+}
+@keyframes animate {
+	from {
+		background-position: 0 0;
+	}
+	from {
+		background-position: 100% 0 ;
+	}
+}
+.car {
+       position: absolute;
+       bottom: 10px;
+       left: 700px;
+}
+.bg h2 {
+	position: absolute;
+	top: 8px;
+	left: 80px;
+	font-size: 43px;
+	font-weight: 300;
+	letter-spacing: 0;
+	font-family: 'Caveat', cursive;
+}
